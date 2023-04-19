@@ -24,6 +24,7 @@ output "ssh" {
 output "ssh" {
   description = "A shortcut for ssh command"
   value = "ssh  ${var.admin_username}@${azurerm_public_ip.this.ip_address}"
+}
 
 output "instance_id" {
   description = "Instance ID"
