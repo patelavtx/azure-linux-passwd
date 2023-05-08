@@ -32,6 +32,12 @@ variable "admin_username" {
   description = "Provide local user of the VM"
 }
 
+variable "admin_password" {
+  type = string
+  default = "Aviatrix123#"
+  description = "Provide initial password of the VM"
+}
+
 variable "tags" {
   description = "Provide additional tags"
   default     = {}

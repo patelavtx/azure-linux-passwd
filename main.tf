@@ -106,7 +106,7 @@ resource "azurerm_linux_virtual_machine" "this" {
   size                = "Standard_B1s"
   admin_username      = var.admin_username
   disable_password_authentication = "false"
-  admin_password = "Aviatrix123#"
+  admin_password = var.admin_password
   network_interface_ids = [
     azurerm_network_interface.this.id
   ]
