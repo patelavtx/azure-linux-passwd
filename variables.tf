@@ -64,5 +64,6 @@ sudo apt-get install -y iperf3
 sudo apt-get install -y nttcp
 wget https://github.com/microsoft/ethr/releases/latest/download/ethr_linux.zip
 unzip ethr_linux.zip -d /home/ubuntu/
+sudo apt-get install -y stress-ng
 EOF
 }
