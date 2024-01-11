@@ -58,5 +58,11 @@ locals {
 sudo apt update -y
 sudo apt install apache2 -y
 echo "<h1>${var.vm_name}</h1>" | sudo tee /var/www/html/index.html
+sudo apt-get install -y traceroute
+sudo apt-get install -y unzip
+sudo apt-get install -y iperf3
+sudo apt-get install -y nttcp
+wget https://github.com/microsoft/ethr/releases/latest/download/ethr_linux.zip
+unzip ethr_linux.zip -d /home/ubuntu/
 EOF
 }
